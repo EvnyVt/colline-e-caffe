@@ -4,16 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Coffee</title>
   </head>
-  <body>
-    <header class="bg-[#E1CBA6] text-amber-950">
+  <body class="font-poppins">
+    <header class="text-amber-950">
       <div
         class="max-w-7xl mx-auto px-2 flex items-center justify-between h-16"
       >
         <span>
           <img
-            class="w-14 h-14 cursor-pointer"
+            class="logo w-14 h-14 cursor-pointer"
             src="/img/logo.jpg"
             alt="logo"
           />
@@ -22,22 +28,22 @@
         <nav class="hidden sm:flex items-center justify-center space-x-4">
           <a
             href="#"
-            class="rounded-md px-3 py-2 textt-sm font-medium hover:bg-amber-900"
+            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
             >Home</a
           >
           <a
             href="#"
-            class="rounded-md px-3 py-2 textt-sm font-medium hover:bg-amber-900"
+            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
             >Sobre</a
           >
           <a
             href="#"
-            class="rounded-md px-3 py-2 textt-sm font-medium hover:bg-amber-900"
+            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
             >Avaliações</a
           >
           <a
             href="#"
-            class="rounded-md px-3 py-2 textt-sm font-medium hover:bg-amber-900"
+            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
             >Contato</a
           >
         </nav>
@@ -58,7 +64,7 @@
             />
           </svg>
         </button>
-
+        <!--icones de busca e carrinho-->
         <div class="flex gap-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +72,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="size-6 cursor-pointer"
+            class="size-6 cursor-pointer transition-transform duration-300 hover:scale-110"
           >
             <path
               stroke-linecap="round"
@@ -93,45 +99,116 @@
       <div id="menuMobile" class="hidden bg-[#E1CBA6]">
         <a
           href="#"
-          class="block px-3 py-2 textt-sm font-medium text-amber-950 hover:bg-amber-900"
+          class="block px-3 py-2 text-sm font-medium text-amber-950 hover:bg-amber-900"
           >Home</a
         >
         <a
-          href="#"
-          class="block px-3 py-2 textt-sm font-medium text-amber-950 hover:bg-amber-900"
+          href="#sobre"
+          class="block px-3 py-2 text-sm font-medium text-amber-950 hover:bg-amber-900"
           >Sobre</a
         >
         <a
           href="#"
-          class="block px-3 py-2 textt-sm font-medium text-amber-950 hover:bg-amber-900"
+          class="block px-3 py-2 text-sm font-medium text-amber-950 hover:bg-amber-900"
           >Avaliações</a
         >
         <a
           href="#"
-          class="block px-3 py-2 textt-sm font-medium text-amber-950 hover:bg-amber-900"
+          class="block px-3 py-2 text-sm font-medium text-amber-950 hover:bg-amber-900"
           >Contato</a
         >
       </div>
     </header>
     <section
+      id="
+    sobre"
       class="relative bg-[url('/img/fundo.jpg')] bg-cover bg-center h-[500px] sm:h-[600px] md:h-[700px]"
     >
       <div class="absolute inset-0 bg-black/50"></div>
+
       <div
-        class="relative z-10 flex flex-col md:items-start justify-center px-6 h-full text-left"
+        class="relative z-10 flex flex-col justify-center items-start h-full max-w-7xl mx-auto px-32"
       >
-        <h1 class="text-white mb-5 text-5xl sm:text-6xl md:text-7xl">
-          Colline & Caffè
+        <h1
+          class="text-white mb-5 text-5xl sm:text-6xl md:text-7xl font-poppins"
+        >
+          <span class="det"> C</span>olline <span class="det">&</span> Caff<span
+            class="det"
+            >è</span
+          >
         </h1>
-        <p class="text-2xl sm:text-3xl md:text-4xl text-amber-900 text-start">
+        <p class="text-2xl sm:text-3xl md:text-4xl text-amber-900 font-poppins">
           Um refúgio de aromas e sabores <br />
           que te transporta para <br />as colinas da Itália.
         </p>
-        <a
-          href="#"
-          class="w-auto sm:w-auto md:w-auto inline-block px-3 py-2 font-medium text-white bg-amber-900 hover:bg-amber-700 mt-5 rounded-full max-w-39"
-          >Ver cardápio</a
-        >
+        <div>
+          <a
+            href="#"
+            class="inline-block px-3 py-2 font-medium text-white bg-amber-900 hover:bg-amber-700 mt-5 text-center rounded-full"
+            >Ver cardápio</a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="sobre" class="flex flex-col items-center justify-center">
+      <h2 class="text-5xl font-bold text-black mb-3 text-center mt-3">
+        Sobre <span>Nós</span>
+      </h2>
+
+      <div
+        id="sobre-container"
+        class="flex gap-10 items-center max-w-5xl w-full bg-amber-500"
+      >
+        <div class="img-sobre">
+          <img src="/img/sobre.jpg" alt="Sobre Colline & Caffè" class="" />
+        </div>
+
+        <div class="texto-sobre">
+          <p class="text-white leading-relaxed">
+            Inspirada nas paisagens magníficas das colinas italianas, a
+            <strong>Colline e Caffè</strong> é um refúgio para quem quer fugir
+            do caos da cidade e valoriza o sabor, a pausa e a beleza nos
+            detalhes. Servimos cafés especiais com grãos selecionados, receitas
+            artesanais e um ambiente pensado para acolher cada cliente.
+            Sofisticada na essência, acolhedora na experiência.
+          </p>
+
+          <a
+            href="#"
+            class="inline-block px-6 py-2 font-medium text-white bg-amber-900 hover:bg-amber-700 mt-5 text-center rounded-full justify-self-end"
+          >
+            Saiba mais
+          </a>
+        </div>
+      </div>
+      <div class="missao">
+        <div>
+          <h3>Missão</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            nisi consectetur quibusdam suscipit aliquam architecto, quos labore
+            cumque hic beatae commodi quis odio qui ut vitae eius id
+            repellendus?
+          </p>
+        </div>
+        <div>
+          <h3>Visão</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+            officiis quasi, qui nisi repudiandae molestiae. Reiciendis
+            cupiditate voluptatem odit. Soluta nemo facere iste dolorem sunt.
+            Distinctio sunt rerum corrupti illo.
+          </p>
+        </div>
+        <div>
+          <h3>Valores</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
+            ab eius obcaecati sunt cumque! Itaque earum incidunt magni adipisci
+            nesciunt aperiam mollitia excepturi, eaque deserunt maiores
+            molestias.
+          </p>
+        </div>
       </div>
     </section>
 
