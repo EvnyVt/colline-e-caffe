@@ -4,48 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+
     <link rel="stylesheet" href="style.css" />
 
     <title>Coffee</title>
   </head>
-  <body class="font-poppins">
-    <header class="text-amber-950">
+  <body class="">
+    <header class="text-amber-950 header">
       <div
-        class="max-w-7xl mx-auto px-2 flex items-center justify-between h-16"
+        class="max-w-7xl mx-auto px-1.5 flex items-center justify-between h-16"
       >
         <span>
           <img
             class="logo w-14 h-14 cursor-pointer"
-            src="/img/logo.jpg"
+            src="/img/logo2.png"
             alt="logo"
           />
         </span>
 
         <nav class="hidden sm:flex items-center justify-center space-x-4">
-          <a
-            href="#"
-            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
-            >Home</a
-          >
-          <a
-            href="#"
-            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
-            >Sobre</a
-          >
-          <a
-            href="#"
-            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
-            >Avaliações</a
-          >
-          <a
-            href="#"
-            class="rounded-md px-3 py-2 text-sm font-medium hover:bg-amber-900"
-            >Contato</a
-          >
+          <a href="#" class="px-3 py-2 text-sm font-medium">Home</a>
+          <a href="#sobre" class="px-3 py-2 text-sm font-medium">Sobre</a>
+          <a href="#cardapio" class="px-3 py-2 text-sm font-medium">Cardápio</a>
+          <a href="#contato" class="px-3 py-2 text-sm font-medium">Contato</a>
         </nav>
         <!-- Botão mobile-->
         <button id="btn-mobile" class="sm:hidden p-2 focus:outline-none">
@@ -120,8 +101,7 @@
       </div>
     </header>
     <section
-      id="
-    sobre"
+      id="#home"
       class="relative bg-[url('/img/fundo.jpg')] bg-cover bg-center h-[500px] sm:h-[600px] md:h-[700px]"
     >
       <div class="absolute inset-0 bg-black/50"></div>
@@ -129,15 +109,13 @@
       <div
         class="relative z-10 flex flex-col justify-center items-start h-full max-w-7xl mx-auto px-32"
       >
-        <h1
-          class="text-white mb-5 text-5xl sm:text-6xl md:text-7xl font-poppins"
-        >
+        <h1 class="text-white mb-5 text-5xl sm:text-6xl md:text-7xl">
           <span class="det"> C</span>olline <span class="det">&</span> Caff<span
             class="det"
             >è</span
           >
         </h1>
-        <p class="text-2xl sm:text-3xl md:text-4xl text-amber-900 font-poppins">
+        <p class="text-2xl sm:text-3xl md:text-4xl text-amber-900">
           Um refúgio de aromas e sabores <br />
           que te transporta para <br />as colinas da Itália.
         </p>
@@ -151,9 +129,7 @@
       </div>
     </section>
     <section id="sobre" class="flex flex-col items-center justify-center">
-      <h2 class="text-5xl font-bold text-black mb-3 text-center mt-3">
-        Sobre <span>Nós</span>
-      </h2>
+      <h2>Sobre <span>Nós</span></h2>
 
       <div
         id="sobre-container"
@@ -186,28 +162,74 @@
           <h3>Missão</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
-            nisi consectetur quibusdam suscipit aliquam architecto, quos labore
-            cumque hic beatae commodi quis odio qui ut vitae eius id
-            repellendus?
+            nisi consectetur quibusdam suscipit aliquam architecto. repellendus?
           </p>
         </div>
         <div>
           <h3>Visão</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            officiis quasi, qui nisi repudiandae molestiae. Reiciendis
-            cupiditate voluptatem odit. Soluta nemo facere iste dolorem sunt.
-            Distinctio sunt rerum corrupti illo.
+            officiis quasi, qui nisi repudiandae molestiae.
           </p>
         </div>
         <div>
           <h3>Valores</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
-            ab eius obcaecati sunt cumque! Itaque earum incidunt magni adipisci
-            nesciunt aperiam mollitia excepturi, eaque deserunt maiores
-            molestias.
+            ab eius obcaecati sunt cumque!
           </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="#cardapio"
+      class="cardapio flex flex-col items-center justify-center"
+    >
+      <h2>Cardápio</h2>
+
+      <div class="container-cardap">
+        <div class="card">
+          <div class="card-titulo salgados"><h3>Salgados</h3></div>
+
+          <img src="/img/salgados.jpg" alt="" />
+          <ul>
+            <li>Croissant</li>
+            <li>Pastel de forno</li>
+            <li>Coxinha</li>
+            <li>Tortas</li>
+            <li>Sanduíches</li>
+            <li>Pizzas</li>
+            <li>Fritas</li>
+            <li>Esfirras</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-titulo caffes"><h3>Caffés</h3></div>
+          <img src="/img/caffes.jpg" alt="" />
+          <ul>
+            <li>Espresso Clássico</li>
+            <li>Café coado</li>
+            <li>Capuccino</li>
+            <li>Latte</li>
+            <li>Macchiato</li>
+            <li>Affogato</li>
+            <li>Iced Coffee</li>
+            <li>Milkshake</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-titulo doces"><h3>Doces</h3></div>
+          <img src="/img/doces.jpg" alt="" />
+          <ul>
+            <li>Croissant</li>
+            <li>Bolos</li>
+            <li>Brownies</li>
+            <li>Tortas</li>
+            <li>Cheesecakes</li>
+            <li>Tiramissù</li>
+            <li>Cookies</li>
+            <li>Crème brùlêe</li>
+          </ul>
         </div>
       </div>
     </section>
