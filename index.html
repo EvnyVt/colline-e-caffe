@@ -17,7 +17,7 @@
         <span>
           <img
             class="logo w-14 h-14 cursor-pointer"
-            src="/img/logo2.png"
+            src="/img/logo.png"
             alt="logo"
           />
         </span>
@@ -101,7 +101,7 @@
       </div>
     </header>
     <section
-      id="#home"
+      id="home"
       class="relative bg-[url('/img/fundo.jpg')] bg-cover bg-center h-[500px] sm:h-[600px] md:h-[700px]"
     >
       <div class="absolute inset-0 bg-black/50"></div>
@@ -182,7 +182,7 @@
       </div>
     </section>
     <section
-      id="#cardapio"
+      id="cardapio"
       class="cardapio flex flex-col items-center justify-center"
     >
       <h2>Cardápio</h2>
@@ -234,6 +234,113 @@
       </div>
     </section>
 
+    <section id="contato">
+      <h2 class="titulo-contato"><span class="det">Nosso </span>contato</h2>
+        <div class="container-info">
+          <div class="info">
+            <h2 class="lojas-titulo">Lojas</h2>
+            <div class="endereco">
+              <img src="/img/local.png" class="icones" >
+              <div>
+                <p>Rua Oliver, 87</p>
+                <p>Pienza Toscana</p>
+                <p>Italy</p>
+              </div>
+            </div>
+            <div class="email">
+              <div>
+                <img src="/img/email.png"  class="icone2" >
+                <img src="/img/tel.png" class="icone2">
+              </div>
+              <address class="contato-meios">
+                <a href="mailto:collinecoffee@gmail.com"
+                  >collinecoffee@gmail.com</a
+                >
+                <div class="tel">
+                 <a  href="tel:+550012345678">+550012345678</a>
+                </div>
+               </address>
+             
+             
+            </div>
+              
+            <div class="redes">
+              <a href="./">
+                <img
+                  src="/img/insta.png"
+                  class="redes-icon cursor-pointer"
+                  alt=""
+                />
+              </a>
+              <a href="./">
+                <img
+                  src="/img/facebook.png"
+                  class="redes-icon cursor-pointer"
+                  alt=""
+                />
+              </a>
+              <a href="./">
+                <img
+                  src="/img/twitter.png"
+                  class="redes-icon cursor-pointer"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="mensagem">
+            <form class="form">
+              <div class="form-row">
+                <div>
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Seu nome"
+                  />
+                </div>
+                <div>
+                  <label for="telefone">Telefone</label>
+                  <input
+                    type="text"
+                    id="telefone"
+                    name="Telefone"
+                    placeholder="(81) 9 2222-5555"
+                  />
+                </div>
+              </div>
+              <div class="col-2">
+                <label for="Email">Nome</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="contato@email.com"
+                />
+              </div>
+              <div class="col-2">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  rows="5"
+                  id="mensagem"
+                  name="mensagem"
+                  placeholder="O que você precisa?"
+                ></textarea>
+              </div>
+              
+            </form>
+            <a
+                href="#"
+                class="inline-block px-6 py-2 font-medium text-white bg-amber-900 hover:bg-amber-700 mt-5 text-center rounded-full justify-self-end"
+              >
+                Enviar mensagem
+              </a>
+          </div>
+        </div>
+      </div>
+    </section>
+ <footer> Colline & Caffè. Todos os direitos reservados.</footer>
     <script src="src/script.js"></script>
   </body>
 </html>

@@ -13,13 +13,27 @@ header {
   justify-items: space-between;
   align-items: center;
   width: 100%;
-
+  padding: 20px;
   z-index: 20;
   color: white;
   font-weight: 800;
 }
-nav a:hover {
-  border-bottom: #143726 3px solid;
+
+nav a {
+  position: relative;
+}
+nav a::after {
+  content: '';
+  position: absolute;
+  background-color: #143726;
+  bottom: 0%;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  transition: 0.5s ease-in-out;
+}
+nav a:hover::after {
+  width: 100%;
 }
 .logo {
   border-radius: 50%;
@@ -27,6 +41,8 @@ nav a:hover {
 .det {
   color: #1f5139;
 }
+
+/* Section sobre*/
 #sobre {
   background: linear-gradient(to bottom, #060301, #07160e, #27160e);
   padding: 20px;
@@ -125,6 +141,7 @@ nav a:hover {
 .missao p {
   line-height: 1.6;
 }
+/* Section cardapio*/
 .cardapio h2 {
   color: #dfdddd;
   font-size: 2.8rem;
@@ -183,4 +200,222 @@ nav a:hover {
 }
 .card li {
   padding-top: 5px;
+}
+
+/*Section contato*/
+#contato {
+  padding: 40px 20px;
+  background-color: #000000f8;
+}
+
+.titulo-contato {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.container-info {
+  max-width: 1100px;
+  color: white;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px rgba(96, 97, 96, 0.3);
+}
+
+.info {
+  padding: 50px;
+  background-color: white;
+  color: #000000;
+  border-radius: 12px;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+.lojas-titulo {
+  margin-bottom: 25px;
+  font: bold;
+  font-size: 2rem;
+  border-bottom: #052214 2px solid;
+}
+.endereco {
+  margin-bottom: 25px;
+  display: flex;
+  gap: 12px;
+}
+.icones {
+  width: auto;
+  height: 32px;
+}
+.icone2 {
+  width: auto;
+  margin-bottom: 20px;
+  height: 28;
+}
+
+.email {
+  display: flex;
+  gap: 12px;
+}
+
+.tel {
+  margin-top: 20px;
+}
+
+.redes {
+  margin-top: 80px;
+  display: flex;
+  gap: 40px;
+}
+
+.redes-icon {
+  width: 36px;
+  height: 36px;
+}
+.mensagem {
+  background-color: #052214;
+  color: #fff;
+  padding: 50px;
+  border-radius: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  padding: 8px 6px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #8abda5;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(138, 189, 165, 0.3);
+}
+footer {
+  text-align: center;
+  color: white;
+  background-color: #000000f8;
+  padding-bottom: 12px;
+}
+
+/*Responsividade*/
+
+/* Ajusta o header */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
+
+/* Seção Sobre */
+@media (max-width: 900px) {
+  #sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-sobre {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .img-sobre img {
+    max-width: 100%;
+  }
+}
+
+/* Missão */
+@media (max-width: 900px) {
+  .missao {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .missao div {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Cardápio */
+@media (max-width: 900px) {
+  .container-cardap {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Contato */
+@media (max-width: 900px) {
+  .container-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .info,
+  .mensagem {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .titulo-contato {
+    font-size: 2.2rem;
+  }
+
+  .lojas-titulo {
+    font-size: 1.8rem;
+  }
+
+  .texto-sobre p {
+    font-size: 1rem;
+  }
 }
