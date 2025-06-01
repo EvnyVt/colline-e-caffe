@@ -1,0 +1,98 @@
+/*Responsividade*/
+
+/* Ajusta o header */
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+}
+
+/* Seção Sobre */
+@media (max-width: 900px) {
+  #sobre-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-sobre {
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .img-sobre img {
+    max-width: 100%;
+  }
+}
+
+/* Missão */
+@media (max-width: 900px) {
+  .missao {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .missao div {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* Cardápio */
+@media (max-width: 900px) {
+  .container-cardap {
+    justify-content: center;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Contato */
+@media (max-width: 900px) {
+  .container-info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .info,
+  .mensagem {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  .titulo-contato {
+    font-size: 2.2rem;
+  }
+
+  .lojas-titulo {
+    font-size: 1.8rem;
+  }
+
+  .texto-sobre p {
+    font-size: 1rem;
+  }
+}

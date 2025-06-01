@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/src/output.css" />
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-res.css">
 
     <title>Coffee</title>
   </head>
@@ -106,8 +107,8 @@
     >
       <div class="absolute inset-0 bg-black/50"></div>
 
-      <div
-        class="relative z-10 flex flex-col justify-center items-start h-full max-w-7xl mx-auto px-32"
+      <div 
+        class="relative z-10 flex flex-col justify-center items-start h-full max-w-7xl mx-auto px-32 efeito"
       >
         <h1 class="text-white mb-5 text-5xl sm:text-6xl md:text-7xl">
           <span class="det"> C</span>olline <span class="det">&</span> Caff<span
@@ -133,7 +134,7 @@
 
       <div
         id="sobre-container"
-        class="flex gap-10 items-center max-w-5xl w-full bg-amber-500"
+        class="flex gap-10 items-center max-w-5xl w-full bg-amber-500 efeito"
       >
         <div class="img-sobre">
           <img src="/img/sobre.jpg" alt="Sobre Colline & Caffè" class="" />
@@ -158,21 +159,21 @@
         </div>
       </div>
       <div class="missao">
-        <div>
+        <div class="efeito">
           <h3>Missão</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
             nisi consectetur quibusdam suscipit aliquam architecto. repellendus?
           </p>
         </div>
-        <div>
+        <div class="efeito">
           <h3>Visão</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
             officiis quasi, qui nisi repudiandae molestiae.
           </p>
         </div>
-        <div>
+        <div class="efeito">
           <h3>Valores</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis
@@ -187,56 +188,14 @@
     >
       <h2>Cardápio</h2>
 
-      <div class="container-cardap">
-        <div class="card">
-          <div class="card-titulo salgados"><h3>Salgados</h3></div>
-
-          <img src="/img/salgados.jpg" alt="" />
-          <ul>
-            <li>Croissant</li>
-            <li>Pastel de forno</li>
-            <li>Coxinha</li>
-            <li>Tortas</li>
-            <li>Sanduíches</li>
-            <li>Pizzas</li>
-            <li>Fritas</li>
-            <li>Esfirras</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-titulo caffes"><h3>Caffés</h3></div>
-          <img src="/img/caffes.jpg" alt="" />
-          <ul>
-            <li>Espresso Clássico</li>
-            <li>Café coado</li>
-            <li>Capuccino</li>
-            <li>Latte</li>
-            <li>Macchiato</li>
-            <li>Affogato</li>
-            <li>Iced Coffee</li>
-            <li>Milkshake</li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-titulo doces"><h3>Doces</h3></div>
-          <img src="/img/doces.jpg" alt="" />
-          <ul>
-            <li>Croissant</li>
-            <li>Bolos</li>
-            <li>Brownies</li>
-            <li>Tortas</li>
-            <li>Cheesecakes</li>
-            <li>Tiramissù</li>
-            <li>Cookies</li>
-            <li>Crème brùlêe</li>
-          </ul>
-        </div>
+      <div class="container-cardap efeito">
+        
       </div>
     </section>
 
     <section id="contato">
       <h2 class="titulo-contato"><span class="det">Nosso </span>contato</h2>
-        <div class="container-info">
+        <div class="container-info efeito">
           <div class="info">
             <h2 class="lojas-titulo">Lojas</h2>
             <div class="endereco">
@@ -299,6 +258,7 @@
                     name="nome"
                     placeholder="Seu nome"
                   />
+                  
                 </div>
                 <div>
                   <label for="telefone">Telefone</label>
@@ -308,7 +268,9 @@
                     name="Telefone"
                     placeholder="(81) 9 2222-5555"
                   />
+                  
                 </div>
+                
               </div>
               <div class="col-2">
                 <label for="Email">Nome</label>
@@ -318,6 +280,7 @@
                   name="email"
                   placeholder="contato@email.com"
                 />
+                <p class="errorEmail"></p>
               </div>
               <div class="col-2">
                 <label for="mensagem">Mensagem</label>
@@ -327,15 +290,12 @@
                   name="mensagem"
                   placeholder="O que você precisa?"
                 ></textarea>
+                <p class="error"></p>
               </div>
               
+              <button type="submit">Enviar mensagem</button>
             </form>
-            <a
-                href="#"
-                class="inline-block px-6 py-2 font-medium text-white bg-amber-900 hover:bg-amber-700 mt-5 text-center rounded-full justify-self-end"
-              >
-                Enviar mensagem
-              </a>
+            
           </div>
         </div>
       </div>
